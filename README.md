@@ -11,7 +11,7 @@ $ git clone https://github.com/CaptainVee/mondico.git
 1. Create a virtual environment:
 
    ```sh
-   $ python3 -m venv venv &&
+   $ python3 -m venv venv
    ```
 
 1. activate the virtual environment:
