@@ -13,6 +13,7 @@ html{
 
 .max-wrapper{
     max-width:1600px;
+    width:100%;
     margin:0 auto;
 }
 .max-wrapper__content{
@@ -29,6 +30,12 @@ a:active{
     color:#1B66C9;
 }
 
+body{
+    display:flex;
+    min-height:100vh;
+    flex-direction: column;
+}
+
 /* Navigation */
 
 .navigation-wrapper{
@@ -41,10 +48,10 @@ a:active{
     position:relative;
 }
 .navigation__logo{
-    font-size:1.7rem;
     font-family:'Poppins', sans-serif;
 }
 .navigation__logo h1{
+    font-size:2.8rem;
     font-weight:600;
     color:#111111;
 }
@@ -82,4 +89,41 @@ a:active{
 }
 .navigation__links--link-dropdown-products{
     top:5.9rem;
+}
+
+.footer-wrapper{
+    margin-top: auto;
+}
+.footer{
+    display:flex;
+    justify-content: space-between;
+}
+.footer__links{
+    display:flex;
+    column-gap: 5rem;
+}
+.footer__links p{
+    font-size:1.6rem;
+    margin-top: 1rem;
+}
+.footer__logo{
+    font-family:'Poppins', sans-serif;
+}
+.footer__logo h1{
+    font-weight:600;
+    font-size:2.8rem;
+    color:#111111;
+}
+.footer__logo + p{
+    font-size:1.6rem;
+}
+.footer__links h1{
+    color:#111111;
+}
+.copyright{
+    border-top:1px solid #aaa;
+    margin:3rem auto;
+    text-align:center;
+    padding-top:2rem;
+    font-size:1.6rem;
 }
