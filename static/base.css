@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.max-wrapper{
+    max-width:1600px;
+    margin:0 auto;
+}
+.max-wrapper__content{
+    width:94%;
+    margin:0 auto;
+}
+
+a{
+    color:#111111;
+    text-decoration: none;
+}
+a:hover,
+a:active{
+    color:#1B66C9;
+}
+
+/* Navigation */
+
+.navigation-wrapper{
+    border-bottom:1px solid #dbdbdb;
+}
+.navigation{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+.navigation__logo{
+    font-size:1.7rem;
+    font-family:'Poppins', sans-serif;
+}
+.navigation__logo h1{
+    font-weight:600;
+    color:#111111;
+}
+.navigation__links{
+    display:flex;
+    font-size:1.6rem;
+}
+.navigation__links--link{
+    padding:2rem 0;
+}
+.navigation__links--link:not(:last-child){
+    margin-right:3.5rem;
+}
+.navigation__links--link:hover .navigation__links--link-dropdown{
+    display:block;
+}
+.navigation__links--link-dropdown{
+    position:absolute;
+    background: #fff;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+    border-radius: 4px;
+    display: none;
+    padding-bottom: 5px;
+    padding:1rem 0;
+}
+.navigation__links--link-dropdown-item{
+    color:#0e6295;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    min-width:16rem;
+}
+.navigation__links--link-dropdown-item:hover{
+    background: #eaf0f3;
+    cursor:pointer;
+}
+.navigation__links--link-dropdown-products{
+    top:5.9rem;
+}
