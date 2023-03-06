@@ -2,90 +2,109 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'base.css' %}" />
-    <title>{% block title %} Mondico {% endblock %}</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'base.css' %}" />
+  <title>{% block title %} Mondico {% endblock %}</title>
+</head>
+
+<body>
 
 
-    <nav class="max-wrapper navigation-wrapper">
-      <div class="max-wrapper__content navigation">
-        <div class="navigation__logo">
+  <nav class="max-wrapper navigation-wrapper">
+    <div class="max-wrapper__content navigation">
+      <div class="navigation__logo">
+        <h1>Mondico</h1>
+      </div>
+      <div class="navigation__links">
+        <div class="navigation__links--link">
+          <a href="#">Home</a>
+        </div>
+        <div class="navigation__links--link">
+          <a href="#">About</a>
+          <div class="navigation__links--link-dropdown navigation__links--link-dropdown-products">
+            <a href="{% url 'about' %}">
+              <div class="navigation__links--link-dropdown-item">About Us</div>
+            </a>
+            <div class="navigation__links--link-dropdown-item">Career</div>
+            <div class="navigation__links--link-dropdown-item">Location</div>
+          </div>
+        </div>
+        <div class="navigation__links--link">
+          <a href="#">Products</a>
+          <div class="navigation__links--link-dropdown navigation__links--link-dropdown-products">
+            <a href="{% url 'product_item' %}">
+              <div class="navigation__links--link-dropdown-item">Fabric Care</div>
+            </a>
+            <a href="{% url 'product_item' %}">
+              <div class="navigation__links--link-dropdown-item">Home Care</div>
+            </a>
+            <a href="{% url 'product_item' %}">
+              <div class="navigation__links--link-dropdown-item">Baby Care</div>
+            </a>
+            <a href="{% url 'product_item' %}">
+              <div class="navigation__links--link-dropdown-item">Oral Care</div>
+            </a>
+            <a href="{% url 'product_item' %}">
+              <div class="navigation__links--link-dropdown-item">Personal Care</div>
+            </a>
+            <a href="{% url 'product_item' %}">
+              <div class="navigation__links--link-dropdown-item">Others</div>
+            </a>
+          </div>
+        </div>
+        <div class="navigation__links--link">
+          <a href="#">Distributor</a>
+        </div>
+        <div class="navigation__links--link">
+          <a href="{% url 'contact' %}">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  {% block content %} {% endblock %}
+
+  <footer class="max-wrapper footer-wrapper">
+    <div class="max-wrapper__content footer">
+      <div>
+        <div class="footer__logo">
           <h1>Mondico</h1>
         </div>
-        <div class="navigation__links">
-          <div class="navigation__links--link">
-            <a href="#">Home</a>
-          </div>
-          <div class="navigation__links--link">
-            <a href="#">About</a>
-            <div class="navigation__links--link-dropdown navigation__links--link-dropdown-products">
-                <div class="navigation__links--link-dropdown-item">About Us</div>
-                <div class="navigation__links--link-dropdown-item">Career</div>
-                <div class="navigation__links--link-dropdown-item">Location</div>
-            </div>
-          </div>
-          <div class="navigation__links--link">
-            <a href="#">Products</a>
-            <div class="navigation__links--link-dropdown navigation__links--link-dropdown-products">
-                <div class="navigation__links--link-dropdown-item">Fabric Care</div>
-                <div class="navigation__links--link-dropdown-item">Home Care</div>
-                <div class="navigation__links--link-dropdown-item">Baby Care</div>
-                <div class="navigation__links--link-dropdown-item">Oral Care</div>
-                <div class="navigation__links--link-dropdown-item">Personal Care</div>
-                <div class="navigation__links--link-dropdown-item">Others</div>
-              </div>
-          </div>
-          <div class="navigation__links--link">
-            <a href="#">Distributor</a>
-          </div>
-          <div class="navigation__links--link">
-            <a href="#">Contact</a>
-          </div>
-        </div>
+        <p>Feel comfortable in a flawless skin</p>
       </div>
-    </nav>
-
-    {% block content %} {% endblock %}
-
-    <footer class="max-wrapper footer-wrapper">
-      <div class="max-wrapper__content footer">
+      <div class="footer__links">
         <div>
-          <div class="footer__logo"><h1>Mondico</h1></div>
-          <p>Feel comfortable in a flawless skin</p>
+          <h1>Company</h1>
+          <p><a href="{% url 'home' %}">Home</a></p>
+          <p><a href="#">Distributor</a></p>
+          <p><a href="{% url 'contact' %}">Contact</a></p>
         </div>
-        <div class="footer__links">
-          <div>
-            <h1>Company</h1>
-            <p><a href="#">Home</a></p>
-            <p><a href="#">Distributor</a></p>
-            <p><a href="#">Contact</a></p>
-          </div>
-          <div>
-            <h1>Products</h1>
-            <p><a href="#">Fabric Care</a></p>
-            <p><a href="#">Home Care</a></p>
-            <p><a href="#">Baby Care</a></p>
-            <p><a href="#">Oral Care</a></p>
-            <p><a href="#">Personal Care</a></p>
-            <p><a href="#">Others</a></p>
-          </div>
-          <div>
-            <h1>About</h1>
-            <p>About Us</p>
-            <p>Career</p>
-            <p>Location</p>
-          </div>
+        <div>
+          <h1>Products</h1>
+          <p><a href="{% url 'product_item' %}">Fabric Care</a></p>
+          <p><a href="{% url 'product_item' %}">Home Care</a></p>
+          <p><a href="{% url 'product_item' %}">Baby Care</a></p>
+          <p><a href="{% url 'product_item' %}">Oral Care</a></p>
+          <p><a href="{% url 'product_item' %}">Personal Care</a></p>
+          <p><a href="{% url 'product_item' %}">Others</a></p>
+        </div>
+        <div>
+          <h1>About</h1>
+          <p>About Us</p>
+          <p>Career</p>
+          <p>Location</p>
         </div>
       </div>
-      <div class="max-wrapper__content copyright">
-        © 2023 Dribbble. All rights reserved.
-      </div>
-    </footer>
-    
-  </body>
+    </div>
+    <div class="max-wrapper__content copyright">
+      © 2023 Mondico. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+
 </html>
