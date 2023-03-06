@@ -24,10 +24,11 @@ html{
 a{
     color:#111111;
     text-decoration: none;
+    cursor:pointer;
 }
 a:hover,
 a:active{
-    color:#1B66C9;
+    color:#DD5F00;
 }
 
 body{
@@ -78,7 +79,8 @@ body{
     padding:1rem 0;
 }
 .navigation__links--link-dropdown-item{
-    color:#0e6295;
+    color:#DD5F00;
+    /* color:#0e6295; */
     font-size: 1.5rem;
     padding: 8px 16px;
     min-width:16rem;
@@ -93,8 +95,10 @@ body{
 
 .footer-wrapper{
     margin-top: auto;
+    background:#fafafb;
 }
 .footer{
+    padding-top:5rem;
     display:flex;
     justify-content: space-between;
 }
