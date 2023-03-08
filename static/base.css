@@ -37,6 +37,12 @@ body{
     flex-direction: column;
 }
 
+.std-title{
+    font-size: 4.5rem;
+    color: #2F2F2F;
+    text-align:center;
+}
+
 .padding-top{
     padding-top:15rem;
 }
@@ -49,6 +55,10 @@ body{
     color: #fff;
     font-size:1.5rem;
     max-width:max-content;
+    transition:250ms ease;
+}
+.btn:hover{
+    background: linear-gradient(#dd5f00, #f89a3a);
 }
 
 /* Navigation */
@@ -64,6 +74,8 @@ body{
 }
 .navigation__logo{
     font-family:'Poppins', sans-serif;
+    padding:1.5rem 0;
+
 }
 .navigation__logo h1{
     font-size:2.8rem;
@@ -147,6 +159,7 @@ body{
 }
 .footer__logo + p{
     font-size:1.6rem;
+    margin-bottom:2rem;
 }
 .footer__links h1{
     color:#111111;
