@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'base.css' %}" />
     <link rel="stylesheet" href="{% static 'home.css' %}" />
+    <link rel="stylesheet" href="{% static 'contact.css' %}" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -175,6 +177,33 @@
 
       }
     })
+
+    </script>
+
+    <script>
+      let inputs = document.querySelectorAll(".input")
+      inputs.forEach(input =>{
+        let label = input.children.item(0)
+        let inputboxWrapper = input.children.item(1)
+        let inputbox = inputboxWrapper.children.item(0)
+
+        label.addEventListener("click", function(){
+          label.classList.add("active")
+          inputboxWrapper.classList.add("active")
+          inputbox.focus()
+        })
+        
+        inputbox.addEventListener("focus", function(){
+          label.classList.add("active")
+          inputboxWrapper.classList.add("active")
+        })
+        inputbox.addEventListener("focusout", function(){
+          if(inputbox.value.trim() === '' || inputbox.value.trim() === ' '){
+            label.classList.remove("active")
+            inputboxWrapper.classList.remove("active")
+          }
+        })
+      })
 
     </script>
 

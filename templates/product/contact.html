@@ -1,7 +1,50 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
-<main>
-    <h1>This is contact page</h1>
+<main class="max-wrapper contact-scaffold">
+  <section class="max-wrapper__content">
+    <div class="contact-title">
+      <div class="sub-title">
+        <div></div>
+        <p>Contact us</p>
+      </div>
+      <h1>Let's get in touch</h1>
+    </div>
+    <div class="contact-content">
+      <div class="contact-content-row">
+        <div class="input">
+          <div class="input-label">Full Name</div>
+          <div class="input-main">
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="contact-content-row">
+        <div class="input">
+          <div class="input-label">Email</div>
+          <div class="input-main">
+            <input type="text" type="email" required/>
+          </div>
+        </div>
+      </div>
+      <div class="contact-content-row">
+        <div class="input">
+          <div class="input-label">Mobile Number</div>
+          <div class="input-main">
+            <input type="text" type="number" min="0"/>
+          </div>
+        </div>
+      </div>
+      <div class="contact-content-row">
+        <div class="input">
+          <div class="input-label">Message</div>
+          <div class="input-main">
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
 {% endblock%}
+

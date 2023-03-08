@@ -192,6 +192,15 @@
     }
 }
 
+.faqs-title *{
+    display:grid;
+    place-items: center;
+}
+.faqs-title p:first-child{
+    font-size:1.6rem;
+    color:#DD5F00;
+    font-weight: 600;
+}
 .faqs-title{
     margin-bottom:4rem;
 }
