@@ -141,7 +141,43 @@
         },
 
       });
+
+      let faqs_title = document.querySelectorAll(".faqs-accordion-title")
+
+    faqs_title.forEach(ft => {
+
+      const accordionContent = ft.nextElementSibling
+      const pointer = ft.children.item(0)
+      
+      ft.onclick = () => {
+
+        if (!accordionContent.classList.contains("effect")) {
+          pointer.classList.add("rotate")
+          accordionContent.classList.add("effect")
+          accordionContent.style.height = 'auto'
+
+          const elemHeight = accordionContent.clientHeight + "px"
+          accordionContent.style.height = '0px'
+
+          setTimeout(function () {
+            accordionContent.style.height = elemHeight
+          }, 0)
+
+        } else {
+          pointer.classList.remove("rotate")
+          accordionContent.style.height = '0px'
+          accordionContent.addEventListener('transitionend', () => {
+            accordionContent.classList.remove('effect')
+          }, {
+            once: true
+          })
+        }
+
+      }
+    })
+
     </script>
+
 
 
   </body>
