@@ -2,43 +2,80 @@
 
 {% block content %}
     <main>
-        <div class="max-wrapper">
-            <div class="delivery">
-                <div class="delivery-header">
-                    <p>DELIVERY</p>
-                    <h1>Delivery Partner</h1>
-                    <p>With our fast delivery processes, your body and skin would be reinvented.</p>
+
+        {% comment %} Hero {% endcomment %}
+
+        <section class="max-wrapper">
+            <div class="max-wrapper__content">
+                <div class="hero">
+                    <div class="hero__content">
+                        <div class="hero__content-delivery">
+                            <span>Fast Delivery</span> 
+                            <div class="hero__content-delivery-img">
+                                {% load static %} <img src="{% static 'bicycle.png' %}" alt="bicycle"/>
+                            </div>
+                        </div>
+                        <h1>Feel Comfortable in <span>Flawless Skin</span></h1>
+                        <p>Achieve a natural, smooth complexion with Mondico long-lasting skin care products.</p>
+                        <button class="btn">Get Started</button>
+                    </div>
+                    <div class="hero__img">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide">{% load static %} <img src="{% static 'hero_img (1).jpg' %}" alt="Mondico"/></div>
+                              <div class="swiper-slide">{% load static %} <img src="{% static 'hero_img (2).jpg' %}" alt="Mondico"/></div>
+                              <div class="swiper-slide">{% load static %} <img src="{% static 'hero_img (3).jpg' %}" alt="Mondico"/></div>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-                <div class="delivery-logistics">
-                    <div class="delivery-logistics-card">
-                        <div class="delivery-logistics-card-img">
-                            {% load static %} <img src="{% static 'mondico_img_1.png' %}" alt="order"/>
-                        </div>
-                        <div class="delivery-logistics-card-caption">
-                            <div class="delivery-logistics-card-caption-main"><h1>Easy To Order</h1></div>
-                            <div class="delivery-logistics-card-caption-sub">Our branded online ordering web app is simple to use with new products.</div>
-                        </div>
+            </div>
+        </section>
+
+
+        {% comment %} Delivery Section {% endcomment %}
+
+        <section class="max-wrapper">
+            <div class="max-wrapper__content">
+                <div class="padding-top">
+                    <div class="delivery-header">
+                        <p>DELIVERY</p>
+                        <h1>Delivery Partner</h1>
+                        <p>With our fast delivery processes, your body and skin would be reinvented.</p>
                     </div>
-                    <div class="delivery-logistics-card">
-                        <div class="delivery-logistics-card-img">
-                            {% load static %} <img src="{% static 'mondico_img_2.png' %}" alt="delivery"/>
+                    <div class="delivery-logistics">
+                        <div class="delivery-logistics-card">
+                            <div class="delivery-logistics-card-img">
+                                {% load static %} <img src="{% static 'mondico_img_1.png' %}" alt="order"/>
+                            </div>
+                            <div class="delivery-logistics-card-caption">
+                                <div class="delivery-logistics-card-caption-main"><h1>Easy To Order</h1></div>
+                                <div class="delivery-logistics-card-caption-sub">Our branded online ordering web app is simple to use with new products.</div>
+                            </div>
                         </div>
-                        <div class="delivery-logistics-card-caption">
-                            <div class="delivery-logistics-card-caption-main"><h1>Fastest Delivery</h1></div>
-                            <div class="delivery-logistics-card-caption-sub"> We offer a wide range of options for a better and accelerated delivery service.</div>
+                        <div class="delivery-logistics-card">
+                            <div class="delivery-logistics-card-img">
+                                {% load static %} <img src="{% static 'mondico_img_2.png' %}" alt="delivery"/>
+                            </div>
+                            <div class="delivery-logistics-card-caption">
+                                <div class="delivery-logistics-card-caption-main"><h1>Fastest Delivery</h1></div>
+                                <div class="delivery-logistics-card-caption-sub"> We offer a wide range of options for a better and accelerated delivery service.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="delivery-logistics-card">
-                        <div class="delivery-logistics-card-img">
-                            {% load static %} <img src="{% static 'mondico_img_3.png' %}" alt="quality"/>
-                        </div>
-                        <div class="delivery-logistics-card-caption">
-                            <div class="delivery-logistics-card-caption-main"><h1>Best Quality</h1></div>
-                            <div class="delivery-logistics-card-caption-sub">We are best known for good quality and standard product kits.</div>
+                        <div class="delivery-logistics-card">
+                            <div class="delivery-logistics-card-img">
+                                {% load static %} <img src="{% static 'mondico_img_3.png' %}" alt="quality"/>
+                            </div>
+                            <div class="delivery-logistics-card-caption">
+                                <div class="delivery-logistics-card-caption-main"><h1>Best Quality</h1></div>
+                                <div class="delivery-logistics-card-caption-sub">We are best known for good quality and standard product kits.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 {% endblock%}

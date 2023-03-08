@@ -1,9 +1,78 @@
-.delivery{
-    width:94%;
-    max-width:1500px;
-    height:100%;
-    padding-top: 15rem;
+.hero{
+    display:flex;
+    column-gap:2.5rem;
+    row-gap:5rem;
 }
+@media screen and (max-width:768px){
+    .hero{
+        flex-direction:column;
+    }
+}
+.hero__content{
+    padding-top:10rem;
+    display:flex;
+    flex-direction:column;
+    row-gap:2.5rem;
+    max-width:40rem;
+}
+
+.hero__content h1{
+    color:#2f2f2f;
+    font-size:4rem;
+}
+.hero__content h1 span{
+    color:#dd5f00;
+}
+.hero__content p{
+    font-size:1.8rem;
+    max-width:35rem;
+}
+.hero__content-delivery{
+    width:14rem;
+    height:4rem;
+    background:rgba(221, 95, 0, 0.2);
+    padding:4px;
+    display: flex;
+    border-radius: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__content-delivery span{
+    font-size:1.3rem;
+    padding-left: 10px;
+    color:#DD5F00;
+}
+.hero__content-delivery-img{
+    padding:6px;
+    height:2.8rem;
+    width:2.8rem;
+    background:#fff;
+    border-radius:50%;
+}
+.hero__content-delivery-img img{
+    height:100%;
+    width:100%;
+}
+.hero__img{
+    display:flex;
+    flex:1;
+    overflow:hidden;
+}
+
+/* Swiper */
+
+.swiper{
+    flex:1;
+    height:600px;
+}
+.swiper img{
+    object-fit: contain;
+    width:100%;
+    object-position: center;
+}
+
+/* Delivery */
+
 .delivery-header{
     width:100%;
     padding-bottom:2rem;
