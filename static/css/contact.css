@@ -1,0 +1,94 @@
+.contact-scaffold{
+    margin-top:10rem;
+}
+.contact-title{
+    font-family:'Nunito', sans-serif;
+}
+.contact-title .sub-title{
+    font-size:1.8rem;
+    display:flex;
+    align-items:center;
+    column-gap: 10px;
+    color:#045281;
+    font-weight:700;
+    font-style: oblique;
+}
+.contact-title .sub-title div{
+    width:6rem;
+    height:5px;
+    border-radius: 5px;
+    background:#045281;
+}
+.contact-title h1{
+    font-size: 4rem;
+    color: #2F2F2F;
+}
+
+.contact-content{
+    padding-top:2.5rem;
+}
+
+.contact-content-row{
+    margin-bottom:2.5rem;
+    max-width:60rem;
+}
+
+.input{
+    font-size:1.8rem;
+    width:100%;
+    font-family: 'Nunito','Ubuntu','Roboto', Helvetica, sans-serif;
+    font-weight:normal;
+}
+
+.input-label{
+    display:inline-block;
+    color:#9e9e9e;
+    transform: translateY(3.3rem);
+    -webkit-transform: translateY(3.3rem);
+    transition: color .2s ease-out, transform .2s ease-out;
+    -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transform-origin: 0 100%;
+}
+        
+
+.input-label.active{
+    color:#045281;
+    transform: translateY(0) scale(0.8);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: translateY(0) scale(0.8);
+}
+
+.input-main{
+    height:4rem;
+    outline:none;
+    flex: 1;
+    font-size:1.8rem;
+    border:none;
+    border-bottom: 1px solid #9e9e9e;
+    display: flex;
+    overflow: hidden;
+}
+.input-main.active{
+    border-bottom: 1px solid #045281;
+    box-shadow: 0 1px 0 0 #045281;
+}
+
+.input-main input{
+    height:inherit;
+    outline:none;
+    width:100%;
+    font-size:1.8rem;
+    border:none;
+    border-width: 0;
+    font-weight: normal;
+    font-family:'Nunito','Ubuntu','Roboto', Helvetica, sans-serif;
+    padding-right: 10px;
+}
+
+.input-main span{
+    display:grid;
+    place-items: center;
+    color:#C4C4C4;
+    cursor:pointer;
+}
