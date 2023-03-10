@@ -29,8 +29,10 @@ a{
 }
 a:hover,
 a:active{
-    color:#DD5F00;
+    color:dodgerblue;
+    /* color:#045281; */
 }
+
 
 body{
     display:flex;
@@ -52,14 +54,14 @@ body{
     padding:1.2rem 2.4rem;
     border:none;
     border-radius: 6px;
-    background: linear-gradient(#f89a3a,#dd5f00);
+    background: linear-gradient(#045281,dodgerblue);
     color: #fff;
     font-size:1.5rem;
     max-width:max-content;
     transition:250ms ease;
 }
 .btn:hover{
-    background: linear-gradient(#dd5f00, #f89a3a);
+    background: linear-gradient(dodgerblue, #045281)
 }
 
 /* Navigation */
@@ -95,6 +97,12 @@ body{
         display:none;
     }
 }
+@media screen and (min-width:768px){
+    .navigation__menu-icon{
+        display:none;
+    }
+}
+
 .navigation__links--link:not(:last-child){
     margin-right:3.5rem;
 }
@@ -112,8 +120,7 @@ body{
     z-index:200;
 }
 .navigation__links--link-dropdown-item{
-    color:#DD5F00;
-    /* color:#0e6295; */
+    color:dodgerblue;
     font-size: 1.5rem;
     padding: 8px 16px;
     min-width:16rem;

@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="{% static 'css/base.css' %}" />
   <link rel="stylesheet" href="{% static 'css/home.css' %}" />
   <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <title>{% block title %} Mondico {% endblock %}</title>
 </head>
@@ -76,6 +77,9 @@
         <div class="navigation__links--link">
           <a href="{% url 'contact' %}">Contact</a>
         </div>
+      </div>
+      <div class="navigation__menu-icon">
+        <span class="material-icons">menu</span>
       </div>
     </div>
   </nav>

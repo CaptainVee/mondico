@@ -9,7 +9,7 @@
     display:flex;
     align-items:center;
     column-gap: 10px;
-    color:#045281;
+    color:dodgerblue;
     font-weight:700;
     font-style: oblique;
 }
@@ -17,7 +17,7 @@
     width:6rem;
     height:5px;
     border-radius: 5px;
-    background:#045281;
+    background:dodgerblue;
 }
 .contact-title h1{
     font-size: 4rem;

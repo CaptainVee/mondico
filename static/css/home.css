@@ -21,7 +21,7 @@
     font-size:4rem;
 }
 .hero__content h1 span{
-    color:#dd5f00;
+    color:#045281;
 }
 .hero__content p{
     font-size:1.8rem;
@@ -30,7 +30,7 @@
 .hero__content-delivery{
     width:14rem;
     height:4rem;
-    background:rgba(221, 95, 0, 0.2);
+    background:rgba(205,237,255,.4);
     padding:4px;
     display: flex;
     border-radius: 2rem;
@@ -40,7 +40,7 @@
 .hero__content-delivery span{
     font-size:1.3rem;
     padding-left: 10px;
-    color:#DD5F00;
+    color:#045281;
 }
 .hero__content-delivery-img{
     padding:6px;
@@ -82,7 +82,7 @@
 
 .benefits__header p:first-child{
     font-size:1.6rem;
-    color:#DD5F00;
+    color:dodgerblue;
     font-weight: 600;
 }
 .benefits__header h1{
@@ -108,7 +108,7 @@
     cursor:pointer;
 }
 .benefits__content--card:hover .benefits__content--card__img{
-    background:rgba(221, 95, 0, 0.2);
+    background:rgba(205,237,255,.4);
 }
 .benefits__content--card__img{
     background:#fafafa;
@@ -137,7 +137,7 @@
 }
 .delivery-header p:first-child{
     font-size:1.6rem;
-    color:#DD5F00;
+    color:dodgerblue;
     font-weight: 600;
 }
 .delivery-header h1{
@@ -198,7 +198,7 @@
 }
 .faqs-title p:first-child{
     font-size:1.6rem;
-    color:#DD5F00;
+    color:dodgerblue;
     font-weight: 600;
 }
 .faqs-title{
